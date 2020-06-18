@@ -15,10 +15,10 @@ class Hand(RobotComponent):
     def __init__(self, count: int, name: str, joint_names: List[str]):
         super().__init__(count, name, joint_names)
         suffix = '' if count == 0 else '#%d' % (count - 1)
-        self._old_parents = []
-        self._grasped_objects = []
-        self._prev_positions = [None] * len(joint_names)
-        self._prev_vels = [None] * len(joint_names)  # Used to stop oscillating
+#        self._old_parents = []
+#        self._grasped_objects = []
+#        self._prev_positions = [None] * len(joint_names)
+#        self._prev_vels = [None] * len(joint_names)  # Used to stop oscillating
 
         self._touch_sensors = []
         i = 0
